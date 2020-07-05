@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>其他 · 知识的搬运工</title>
+        <title>命令集 · 知识的搬运工</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -91,10 +91,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Git.html" />
+    <link rel="next" href="console.html" />
     
     
-    <link rel="prev" href="../backEnd/graphql/" />
+    <link rel="prev" href="Git.html" />
     
 
     </head>
@@ -441,7 +441,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.6" data-path="./">
+        <li class="chapter " data-level="1.6" data-path="./">
             
                 <a href="./">
             
@@ -468,7 +468,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.2" data-path="command.html">
+        <li class="chapter active" data-level="1.6.2" data-path="command.html">
             
                 <a href="command.html">
             
@@ -555,7 +555,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >其他</a>
+        <a href="../.." >命令集</a>
     </h1>
 </div>
 
@@ -570,8 +570,26 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <footer class="page-footer"><span class="copyright">Copyright &#xA9; cdliudefu 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">File Modify: 
-2020-04-05 12:24:16
+                                <h3 id="1&#x3001;&#x5E38;&#x7528;&#x547D;&#x4EE4;"><a name="1&#x3001;&#x5E38;&#x7528;&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#1&#x3001;&#x5E38;&#x7528;&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>1&#x3001;&#x5E38;&#x7528;&#x547D;&#x4EE4;</h3>
+<pre><code class="lang-bach">//&#x67E5;&#x770B;&#x8FDB;&#x7A0B;
+$ tasklist
+
+//&#x67E5;&#x770B;&#x6307;&#x5B9A;&#x7AEF;&#x53E3;&#x7684;&#x5360;&#x7528;&#x60C5;&#x51B5;
+$ netstat -aon|findstr &apos;9050&apos;
+
+//&#x7ED3;&#x675F;&#x8FDB;&#x7A0B;
+$ taskkill /pid pid&#x53F7; /f /t
+//&#x6216;
+$ ntsd -c -p q PID&#x53F7;
+
+$ lsof -i //&#x7528;&#x4EE5;&#x663E;&#x793A;&#x7B26;&#x5408;&#x6761;&#x4EF6;&#x7684;&#x8FDB;&#x7A0B;&#x60C5;&#x51B5;&#xFF0C;lsof(list open files)&#x662F;&#x4E00;&#x4E2A;&#x5217;&#x51FA;&#x5F53;&#x524D;&#x7CFB;&#x7EDF;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x7684;&#x5DE5;&#x5177;&#xFF0C;
+$ lsof -i:&#x7AEF;&#x53E3;&#x53F7; // &#x7528;&#x4E8E;&#x67E5;&#x770B;&#x67D0;&#x4E00;&#x7AEF;&#x53E3;&#x5360;&#x7528;&#x60C5;&#x51B5;&#xFF0C;&#x6BD4;&#x5982;&#x67E5;&#x770B;22&#x7AEF;&#x53E3;&#x4F7F;&#x7528;&#x60C5;&#x51B5; lsof -i:22
+$ netstat -tunlp // &#x7528;&#x4E8E;&#x663E;&#x793A;tcp,udp&#x7684;&#x7AEF;&#x53E3;&#x548C;&#x8FDB;&#x7A0B;&#x7B49;&#x76F8;&#x5173;&#x60C5;&#x51B5;
+$ netstat -tunlp|grep &#x7AEF;&#x53E3;&#x53F7; // &#x7528;&#x4E8E;&#x67E5;&#x770B;&#x6307;&#x5B9A;&#x7AEF;&#x53E3;&#x53F7;&#x7684;&#x8FDB;&#x7A0B;&#x60C5;&#x51B5;
+</code></pre>
+<h3 id="2&#x3001;"><a name="2&#x3001;" class="anchor-navigation-ex-anchor" href="#2&#x3001;"><i class="fa fa-link" aria-hidden="true"></i></a>2&#x3001;</h3>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; cdliudefu 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">File Modify: 
+2020-07-05 22:37:44
 </span></footer>
                                 
                                 </section>
@@ -599,12 +617,12 @@
 
             
                 
-                <a href="../backEnd/graphql/" class="navigation navigation-prev " aria-label="Previous page: graphql">
+                <a href="Git.html" class="navigation navigation-prev " aria-label="Previous page: Git使用">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Git.html" class="navigation navigation-next " aria-label="Next page: Git使用">
+                <a href="console.html" class="navigation navigation-next " aria-label="Next page: console详细">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -615,7 +633,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"其他","level":"1.6","depth":1,"next":{"title":"Git使用","level":"1.6.1","depth":2,"path":"content/other/Git.md","ref":"content/other/Git.md","articles":[]},"previous":{"title":"graphql","level":"1.5.3","depth":2,"path":"content/backEnd/graphql/index.md","ref":"content/backEnd/graphql/index.md","articles":[]},"dir":"neutral"},"config":{"plugins":["code","-search","search-pro","back-to-top-button","expandable-chapters-small","chapter-fold","folding-chapters","sectionx","hide-element","tbfed-pagefooter","-highlight","multipart","ancre-navigation","livereload"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © cdliudefu 2019"},"chapter-fold":{},"livereload":{},"search-pro":{},"multipart":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":false},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"folding-chapters":{},"sectionx":{"tag":"b"},"back-to-top-button":{},"ancre-navigation":{"showLevel":true,"associatedWithSummary":true,"mode":"float","printLog":false,"multipleH1":true,"float":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"andy.liu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"知识的搬运工","language":"zh-hans","links":{"sidebar":{"github":"https://github.com/cdliudefu"}},"gitbook":"*","description":"整理和收集知识源、开源、共享、积累"},"file":{"path":"content/other/index.md","mtime":"2020-04-05T04:24:16.940Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-05T14:51:12.638Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"命令集","level":"1.6.2","depth":2,"next":{"title":"console详细","level":"1.6.3","depth":2,"path":"content/other/console.md","ref":"content/other/console.md","articles":[]},"previous":{"title":"Git使用","level":"1.6.1","depth":2,"path":"content/other/Git.md","ref":"content/other/Git.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","-search","search-pro","back-to-top-button","expandable-chapters-small","chapter-fold","folding-chapters","sectionx","hide-element","tbfed-pagefooter","-highlight","multipart","ancre-navigation","livereload"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © cdliudefu 2019"},"chapter-fold":{},"livereload":{},"search-pro":{},"multipart":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":false},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"folding-chapters":{},"sectionx":{"tag":"b"},"back-to-top-button":{},"ancre-navigation":{"showLevel":true,"associatedWithSummary":true,"mode":"float","printLog":false,"multipleH1":true,"float":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"andy.liu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"知识的搬运工","language":"zh-hans","links":{"sidebar":{"github":"https://github.com/cdliudefu"}},"gitbook":"*","description":"整理和收集知识源、开源、共享、积累"},"file":{"path":"content/other/command.md","mtime":"2020-07-05T14:37:44.188Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-05T14:51:12.638Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
